@@ -8,6 +8,7 @@
 body {
     background-color: #f5f5fc;
     font-family: "Lexend Deca", Sans-serif;
+    background: linear-gradient(135deg, #fdfcfb, #e2e2df, #e7f0fd, #fce6e6, #fffbea);
 }
 
 .navbar {
@@ -130,6 +131,7 @@ body {
 .get-started:hover {
     background-color: #0056b3;
 }
+
 .centered-image {
     display: block;
     margin: 40px auto 0 auto;
@@ -237,10 +239,137 @@ body {
 .fields-text {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #ae44fa  ;
+    color: #ae44fa;
     border: 2px solid #ae44fa;
     padding: 10px 40px;
     border-radius: 25px;
     background-color: #e3d1ef;
 }
 
+.commitment-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.commitment-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.commitment-text h2 {
+    font-size: 2.8rem;
+    color: #300351;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    /* Adjust line height for better spacing */
+}
+
+.commitment-text p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    /* Increased line spacing for paragraph text */
+}
+
+.commitment-text .learn-more {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.commitment-text .learn-more:hover {
+    background-color: #0056b3;
+}
+
+.commitment-image {
+    flex: 1;
+    max-width: 45%;
+    text-align: right;
+}
+
+.commitment-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.faq-section {
+    padding: 50px 130px;
+    text-align: center;
+    background-color: #ffe6f0;
+    /* Very light pink */
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    color: #300351;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.faq-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: calc(33% - 40px);
+    /* Adjusts to 3 cards per row */
+    min-width: 280px;
+    text-align: left;
+}
+
+.faq-card h3 {
+    font-size: 1.5rem;
+    color: #300351;
+    margin-bottom: 10px;
+}
+
+.faq-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    /* Increased line spacing for better readability */
+}
+
+@media screen and (max-width: 768px) {
+    .faq-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faq-card {
+        width: 100%;
+    }
+}
+
+.footer {
+    background-color: #300351;
+    /* Dark violet */
+    color: white;
+    /* Text color */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    /* Smaller font size */
+}
