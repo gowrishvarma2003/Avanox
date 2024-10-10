@@ -6,11 +6,16 @@
 }
 
 body {
-    background: linear-gradient(135deg, #fdfcfb 0%, #f5f5fc 25%, #e7f0fd 50%, #fce6e6 75%, #fffbea 100%);
-    background-size: 100% 100%;
     font-family: "Lexend Deca", Sans-serif;
-    margin: 0;
+    background: linear-gradient(135deg, #fdfcfb, #e2e2df, #e7f0fd, #fce6e6, #fffbea);
+    background-attachment: fixed;
+    /* Ensures the gradient stays fixed on the page */
+    background-size: cover;
+    /* Covers the entire page without repeating */
+    height: 100%;
+    min-height: 100vh;
     padding: 0;
+    margin: 0;
 }
 
 .navbar {
