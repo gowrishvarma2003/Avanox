@@ -6,9 +6,11 @@
 }
 
 body {
-    background-color: #f5f5fc;
+    background: linear-gradient(135deg, #fdfcfb 0%, #f5f5fc 25%, #e7f0fd 50%, #fce6e6 75%, #fffbea 100%);
+    background-size: 100% 100%;
     font-family: "Lexend Deca", Sans-serif;
-    background: linear-gradient(135deg, #fdfcfb, #e2e2df, #e7f0fd, #fce6e6, #fffbea);
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
