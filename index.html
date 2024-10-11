@@ -11,22 +11,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                const menuIcon = document.getElementById('menu-icon');
+                const navLinks = document.getElementById('nav-links');
+                const closeBtn = document.getElementById('close-btn');
+
+                menuIcon.addEventListener('click', function () {
+                    navLinks.classList.add('active');
+                });
+
+                closeBtn.addEventListener('click', function () {
+                    navLinks.classList.remove('active');
+                });
+            });
+
+
+    </script>
+
     <nav class="navbar">
         <div class="logo">
             <span><span class="x">A</span>vanox</span>
         </div>
-        <ul class="nav-links">
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="./index.html" class="active">Home</a></li>
             <li><a href="./services.html">Our Services</a></li>
             <!-- <li><a href="#">About Us</a></li> -->
             <li><a href="./contact.html">Contact Us</a></li>
             <li><a href="./careers.html">Careers</a></li>
+            <li class="close-btn" id="close-btn"><i class="fas fa-times"></i></li>
         </ul>
         <div class="search">
             <i class="fas fa-search"></i>
         </div>
     </nav>
+
 
 
     <div class="hero-section">
@@ -122,11 +146,8 @@
     </div>
 </section>
 
-
 <footer class="footer">
     <p>&copy; 2024 Avanox. All rights reserved.</p>
 </footer>
-
 </body>
-
 </html>
